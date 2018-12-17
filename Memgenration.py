@@ -57,18 +57,19 @@ class Example(QWidget):
         vbox.addWidget(self.lbl)
         self.setLayout(vbox)
 
-        self.textEdit = QTextEdit()
-        self.setCentralWidget(self.textEdit)
-        self.statusBar()
+        #     self.textEdit = QTextEdit()
+        #    self.setCentralWidget(self.textEdit)
+        #   self.statusBar()
 
-        openFile = QAction(QIcon('open.png'), 'Open', self)
-        openFile.setShortcut('Ctrl+O')
-        openFile.setStatusTip('Open new File')
-        openFile.triggered.connect(self.showDialogfile)
-
-        menubar = self.menuBar()
-        fileMenu = menubar.addMenu('&File')
-        fileMenu.addAction(openFile)
+    #
+    #       openFile = QAction(QIcon('open.png'), 'Open', self)
+    #      openFile.setShortcut('Ctrl+O')
+    #     openFile.setStatusTip('Open new File')
+    #    openFile.triggered.connect(self.showDialogfile)
+    #
+    #       menubar = self.menuBar()
+    #      fileMenu = menubar.addMenu('&File')
+    #     fileMenu.addAction(openFile)
 
     def hello(self):
         pass
